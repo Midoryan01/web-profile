@@ -14,7 +14,7 @@ This is a **personal web profile template** built using **Next.js** and **Tailwi
 
 ## 🖼️ Preview
 
-![alt text](preview.png)
+![My Photo](./public/preview.png)
 
 ## 📁 Folder Structure
 
