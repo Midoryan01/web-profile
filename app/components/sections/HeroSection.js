@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FiDownload } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 import { sectionVariants, itemVariants } from "@/app/data/animationVariants";
 
 const HeroSection = ({ profile, socialConfig }) => {
@@ -39,19 +39,21 @@ const HeroSection = ({ profile, socialConfig }) => {
           className="mt-8 flex flex-wrap justify-center md:justify-start items-center gap-4"
         >
           <motion.a
-            href={profile.cvUrl}
-            download
-            className="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-slate-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
-            whileHover={{
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              borderColor: "rgb(100, 116, 139)",
-              scale: 1.05,
-            }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <FiDownload />
-            <span>Download CV</span>
-          </motion.a>
+              href={profile.cvUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-slate-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
+              whileHover={{
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                borderColor: "rgb(100, 116, 139)",
+                scale: 1.05,
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <FiArrowUpRight />
+              <span>CV</span>
+            </motion.a>
+
 
           <div className="flex items-center gap-4">
             {socialConfig.socials.map((social) => (
