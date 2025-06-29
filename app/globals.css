@@ -6,8 +6,8 @@ body {
   overflow-x: hidden;
 }
 
-/* --- [BARU] Media Query untuk Efek Khusus Desktop --- */
-/* Aturan ini hanya akan berlaku pada layar dengan lebar 768px atau lebih (tablet ke atas) */
+
+/* Aturan ini hanya akan berlaku pada layar dengan lebar 768px atau lebih  */
 @media (min-width: 768px) {
   html {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><circle cx='12' cy='12' r='5' fill='rgba(255,255,255,0.9)' filter='url(%23glow)'/><defs><filter id='glow' x='-50%25' y='-50%25' width='200%25' height='200%25'><feGaussianBlur stdDeviation='2.5' result='coloredBlur'/><feMerge><feMergeNode in='coloredBlur'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs></svg>")
@@ -40,7 +40,7 @@ body {
   }
 }
 
-/* --- LATAR BELAKANG BINTANG BERGERAK (Berlaku untuk semua layar) --- */
+/* --- LATAR BELAKANG BINTANG BERGERAK --- */
 .stars, .twinkling {
   position: fixed;
   top: 0;
@@ -74,7 +74,7 @@ body {
   to { background-position: -10000px 5000px; }
 }
 
-/* --- [BARU] Optimasi untuk mengurangi gerakan bagi pengguna yang memintanya --- */
+/* --- EFEK ANIMASI PADA BINTANG DAN TWINKLING --- */
 @media (prefers-reduced-motion: reduce) {
   .stars, .twinkling {
     animation: none;
@@ -94,7 +94,7 @@ body {
 ::-webkit-scrollbar-thumb { background: #4c1d95; border-radius: 10px; border: 2px solid #1e1b3a; transition: all 0.3s ease; }
 ::-webkit-scrollbar-thumb:hover { background: #6d28d9; border-color: #4c1d95; box-shadow: 0 0 8px #6d28d9; }
 
-/* --- EFEK HOVER (Sisa kode tetap sama) --- */
+/* --- EFEK HOVER  --- */
 button::before, a.btn-glow::before {
   content: "";
   position: absolute;
