@@ -29,7 +29,7 @@ const HeroSection = ({ profile, socialConfig }) => {
         </motion.h2>
         <motion.p
           variants={itemVariants}
-          className="mt-6 max-w-xl mx-auto md:mx-0 text-slate-300 text-lg leading-relaxed"
+          className="mt-6 max-w-xl mx-auto md:mx-0 text-slate-300 text-lg leading-relaxed text-justify"
         >
           {profile.bio}
         </motion.p>

@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => (
       <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl group-hover:w-60 group-hover:h-60 transition-all duration-500"></div>
       <Image src={project.image} alt={project.title} width={600} height={400} className="rounded-md w-full mb-4 opacity-80 group-hover:opacity-100 transition-opacity" />
       <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>
-      <p className="text-slate-400 mt-2 mb-4 text-sm">{project.description}</p>
+      <p className="text-slate-400 mt-2 mb-4 text-sm text-justify">{project.description}</p>
       <div className="flex flex-wrap gap-2 mt-auto">
         {project.tags.map((tag) => (<span key={tag} className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded-full">{tag}</span>))}
       </div>

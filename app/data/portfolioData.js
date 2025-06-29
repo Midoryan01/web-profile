@@ -21,7 +21,7 @@ import {
 export const profile = {
   name: "RYAN ADI SANJAYA",
   title: "System Analyst & Fullstack Developer",
-  bio: "I'm passionate about system analysis and web development—understanding complex processes, identifying real user needs, and translating them into efficient, intuitive digital solutions that bridge the gap between business goals and technology.",
+  bio: "I'm passionate about system analysis and web development, understanding complex processes, identifying real user needs, and translating them into efficient, intuitive digital solutions that bridge the gap between business goals and technology.",
   avatar: "/profile.jpg",
   cvUrl: "/CV-Orion-Nebula.pdf",
   email: "ryanadisanjaya@gmail.com",
@@ -34,21 +34,21 @@ export const profile = {
 
 export const projects = [
   {
-    title: "Listrikku",
-    description:
-      "Dasbor analitik interaktif untuk memantau armada antargalaksi. Dibuat dengan Next.js dan visualisasi data D3.js.",
-    image: "https://placehold.co/600x400/020010/E2E8F0?text=Project+Alpha",
-    link: "#",
-    tags: ["Node.js"],
+  title: "Listrikku",
+  description:
+    "A modern electricity payment and monitoring platform built with React. Features an intuitive dashboard for tracking usage and transactions.",
+  image: "https://placehold.co/600x400/020010/E2E8F0?text=Listrikku",
+  link: "#",
+  tags: ["React", "Dashboard", "Utility"],
   },
   {
-    title: "Pengaduan Masyarakat",
-    description:
-      "Platform e-commerce dengan pengalaman belanja 3D yang imersif menggunakan Three.js dan React.",
-    image: "https://placehold.co/600x400/020010/E2E8F0?text=Project+Beta",
-    link: "#",
-    tags: ["React", "Three.js", "e-Commerce"],
-  },
+  title: "Pengaduan Masyarakat",
+  description:
+    "A responsive web platform for handling public complaints, designed with an intuitive interface and built using React for a more engaging user experience.",
+  image: "https://placehold.co/600x400/020010/E2E8F0?text=Pengaduan+Masyarakat",
+  link: "#",
+  tags: ["React", "Public Service"],
+  },  
   {
     title: "Web Frozen Food",
     description:
@@ -75,29 +75,29 @@ export const certifications = [
   {
     name: "Skema Analis Sistem (System Analyst)",
     issuer: "BNSP (Badan Nasional Sertifikasi Profesi)",
-    date: "Juni 2024",
-    link: "#",
+    date: "September 2024",
+    link: "https://drive.google.com/file/d/1aadoJxW04DpdhSlPs2uDSPK4e1w3jjx7/view?usp=sharing",
     icon: <FiAward />,
   },
   {
-    name: "Google Project Management Certificate",
-    issuer: "Coursera & Google",
-    date: "Maret 2023",
-    link: "#",
+    name: "IT BootCamp Software Development",
+    issuer: "UBSI (Universitas Bina Sarana Informatika)",
+    date: "June 2023",
+    link: "https://drive.google.com/file/d/1lDG-K50V5nRl74xPHo_ghngsDezmkdQl/view?usp=sharing",
     icon: <FiAward />,
   },
   {
-    name: "Full-Stack Web Development with React",
-    issuer: "The Hong Kong University of Science and Technology",
-    date: "Januari 2023",
-    link: "#",
+    name: "Belajar Dasar Data Science",
+    issuer: "Dicoding Academy",
+    date: "September 2023",
+    link: "https://drive.google.com/file/d/15iqQJUIxVoXljkIj6aar1GrJPh6X5XKd/view?usp=sharing",
     icon: <FiAward />,
   },
   {
-    name: "Python for Everybody Specialization",
-    issuer: "University of Michigan",
-    date: "Oktober 2022",
-    link: "#",
+    name: "Memulai Pemrograman dengan Python",
+    issuer: "Dicoding Academy",
+    date: "September 2023",
+    link: "https://drive.google.com/file/d/1y3p0REOCdE3KlqA7TiSYFY3K4SZ240Oh/view?usp=sharing",
     icon: <FiAward />,
   },
 ];
@@ -108,13 +108,14 @@ export const educations = [
     degree: "Bachelor’s Degree in Information Systems",
     period: "2021 - present",
     description:
-      "Focused on full-stack web development, and system analysis to build efficient and intelligent digital solutions.",
+      "Focused on full-stack web development and system analysis to build efficient, scalable, and intelligent digital solutions. Experienced in bridging technical and business requirements through effective communication and problem-solving.",
     icon: <FiBookOpen />,
   },
   {
     institution: "SMA Negeri 19 Kota Bekasi",
     period: "2019 - 2021",
-    description: "",
+    description: 
+      "Strong interest in information technology with effective communication skills between technical and business teams. My social-science background enhances my ability to understand business processes and user needs.",
     icon: <FiBookOpen />,
   },
 ];
@@ -125,25 +126,25 @@ export const socialConfig = {
   socials: [
     {
       icon: <FiGithub />,
-      label: "GitHub",
+      label: "Midoryan01",
       url: profile.socials.github,
       ariaLabel: "Contact on GitHub",
     },
     {
       icon: <FiLinkedin />,
-      label: "LinkedIn",
+      label: "Ryan Adi Sanjaya",
       url: profile.socials.linkedin,
       ariaLabel: "Contact on LinkedIn",
     },
     {
       icon: <FiInstagram />,
-      label: "Instagram",
+      label: "ryan.as27",
       url: profile.socials.instagram,
       ariaLabel: "Contact on Instagram",
     },
     {
       icon: <FiMail />,
-      label: "Email",
+      label: "ryanadisanjaya@gmail.com",
       url: `mailto:${profile.email}`,
       ariaLabel: "Contact via Email",
     },

@@ -8,7 +8,7 @@ const EducationCard = ({ edu }) => (
             <h3 className="text-xl font-bold text-slate-100">{edu.institution}</h3>
             <p className="text-slate-300 font-medium mt-1">{edu.degree}</p>
             <p className="text-slate-400 text-sm italic mt-1">{edu.period}</p>
-            <p className="text-slate-400 mt-3 text-sm">{edu.description}</p>
+            <p className="text-slate-400 mt-3 text-sm text-justify">{edu.description}</p>
         </div>
     </motion.div>
 );
