@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { sectionVariants } from '@/app/data/animationVariants';
+import { otherSkills } from '@/app/data/portfolioData';
 
 const SkillsSection = ({ skills }) => {
     const duplicatedSkills = [...skills, ...skills]; 
@@ -10,10 +11,12 @@ const SkillsSection = ({ skills }) => {
             className="py-24 text-center"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2  }}
+            viewport={{ once: false, amount: 0.2 }}
             variants={sectionVariants}
         >
             <h2 className="text-4xl font-bold text-center mb-12">Development Tools</h2>
+
+            {/* Scrolling skill icons */}
             <div className="w-full overflow-x-hidden">
                 <motion.div
                     className="flex gap-10"
@@ -29,6 +32,19 @@ const SkillsSection = ({ skills }) => {
                         </div>
                     ))}
                 </motion.div>
+            </div>
+
+            {/* Other skills (System Analysis tools) */}
+            <div className="mt-16">
+                <h3 className="text-3xl font-semibold mb-8">Other Skills</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    {otherSkills.map((item, index) => (
+                        <div key={index} className="bg-slate-800/60 p-6 rounded-xl flex flex-col items-center gap-2 shadow-lg">
+                            <div className="text-4xl">{item.icon}</div>
+                            <span className="text-slate-200 text-center">{item.name}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
         </motion.section>
     );

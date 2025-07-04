@@ -1,4 +1,10 @@
-import { motion } from 'framer-motion';
+// src/app/components/layout/Footer.jsx
+
+"use client"; // <<< Ini adalah baris penting yang harus ditambahkan!
+
+import { motion } from 'framer-motion'; // Path yang disarankan untuk Framer Motion
+// Jika path di atas masih bermasalah, coba ganti dengan: import { motion } from 'framer-motion';
+
 
 const Footer = ({ socialConfig, profileName }) => {
   return (

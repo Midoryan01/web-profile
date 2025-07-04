@@ -20,10 +20,10 @@ import {
 
 export const profile = {
   name: "RYAN ADI SANJAYA",
-  title: "System Analyst & Fullstack Developer",
+  title: "Fullstack Developer & System Analyst",
   bio: "I'm passionate about system analysis and web development, understanding complex processes, identifying real user needs, and translating them into efficient, intuitive digital solutions that bridge the gap between business goals and technology.",
   avatar: "/profile.jpg",
-  cvUrl: "https://drive.google.com/file/d/1frdGCli2Ju-xaxGnt81uP1Ft3Y7-eJhd/view?usp=sharing",
+  cvUrl: "https://drive.google.com/file/d/1cXpNT7K4z6dMV-VLdaNyV7yIzyluOrx1/view?usp=sharing",
   email: "ryanadisanjaya@gmail.com",
   socials: {
     github: "https://github.com/Midoryan01",
@@ -33,22 +33,7 @@ export const profile = {
 };
 
 export const projects = [
-  {
-  title: "Listrikku",
-  description:
-    "A modern electricity payment and monitoring platform built with React. Features an intuitive dashboard for tracking usage and transactions.",
-  image: "https://placehold.co/600x400/020010/E2E8F0?text=Listrikku",
-  link: "#",
-  tags: ["React", "Dashboard", "Utility"],
-  },
-  {
-  title: "Pengaduan Masyarakat",
-  description:
-    "A responsive web platform for handling public complaints, designed with an intuitive interface and built using React for a more engaging user experience.",
-  image: "https://placehold.co/600x400/020010/E2E8F0?text=Pengaduan+Masyarakat",
-  link: "#",
-  tags: ["React", "Public Service"],
-  },  
+
   {
     title: "Web Frozen Food",
     description:
@@ -70,6 +55,13 @@ export const skills = [
   { name: "MySQL", icon: <SiMysql /> },
   { name: "Figma", icon: <SiFigma /> },
 ];
+
+export const otherSkills = [
+        { name: "UML (Use Case, Activity Diagram, Sequence Diagram, Class Diagram)", icon: "🧩" },
+        { name: "ERD & LRS ", icon: "🗂️" },
+        { name: "Flowchart", icon: "🔁" },
+        { name: "Mockup & Wireframe", icon: "🖼️" },
+    ];
 
 export const certifications = [
   {
@@ -112,7 +104,7 @@ export const educations = [
     icon: <FiBookOpen />,
   },
   {
-    institution: "SMA Negeri 19 Kota Bekasi",
+    institution: "SMAN 19 Kota Bekasi",
     period: "2019 - 2021",
     description: 
       "Strong interest in information technology with effective communication skills between technical and business teams. My social-science background enhances my ability to understand business processes and user needs.",
