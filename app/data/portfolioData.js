@@ -22,7 +22,7 @@ export const profile = {
   name: "RYAN ADI SANJAYA",
   title: "Fullstack Developer & System Analyst",
   bio: "I'm passionate about system analysis and web development, understanding complex processes, identifying real user needs, and translating them into efficient, intuitive digital solutions that bridge the gap between business goals and technology.",
-  avatar: "/profile.jpg",
+  avatar: "/profile-bg.png",
   cvUrl: "https://drive.google.com/file/d/1cXpNT7K4z6dMV-VLdaNyV7yIzyluOrx1/view?usp=sharing",
   email: "ryanadisanjaya@gmail.com",
   socials: {

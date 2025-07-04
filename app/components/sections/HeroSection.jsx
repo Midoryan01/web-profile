@@ -74,7 +74,7 @@ const HeroSection = ({ profile, socialConfig }) => {
 
       <motion.div
         variants={itemVariants}
-        className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 relative"
+        className="w-36 h-36 sm:w-48 sm:h-48 lg:w-56 lg:h-56 relative"
         animate={{
           y: [0, -15, 0],
           transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
@@ -83,13 +83,14 @@ const HeroSection = ({ profile, socialConfig }) => {
         <Image
           src={profile.avatar}
           alt="Avatar"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-full"
+          fill
+          style={{ objectFit: "cover", objectPosition: "top" }} // Fokus ke bagian atas
+          className="rounded-lg"
           priority
         />
-        <div className="absolute inset-0 rounded-full bg-purple-500/30 blur-2xl -z-10"></div>
+        <div className="absolute inset-0 rounded-lg bg-purple-500/30 blur-2xl -z-10"></div>
       </motion.div>
+
     </motion.section>
   );
 };
