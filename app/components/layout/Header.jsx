@@ -12,14 +12,23 @@ const navLinks = [
   { name: "Contact", href: "contact" },
 ];
 
-const Header = ({ profileName, onLinkClick }) => {
+const Header = ({ profileName }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
-  
+
   const handleLinkClick = (e, id) => {
-    onLinkClick(e, id);
-    setIsMenuOpen(false); // Selalu tutup menu setelah klik
+    e.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMenuOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsMenuOpen(false);
   };
 
   return (
@@ -31,12 +40,19 @@ const Header = ({ profileName, onLinkClick }) => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <span className="text-xl font-bold text-slate-200">{profileName.split(" ")[0]}</span>
+          <button onClick={scrollToTop} className="text-xl font-bold text-slate-200">
+            {profileName.split(" ")[0]}
+          </button>
 
           {/* Navigasi Desktop */}
           <nav className="hidden md:flex items-center space-x-6">
-            {navLinks.map(link => (
-              <a key={link.href} href={`#${link.href}`} onClick={(e) => handleLinkClick(e, link.href)} className="text-slate-300 hover:text-white transition-colors">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={`#${link.href}`}
+                onClick={(e) => handleLinkClick(e, link.href)}
+                className="text-slate-300 hover:text-white transition-colors"
+              >
                 {link.name}
               </a>
             ))}
@@ -51,9 +67,9 @@ const Header = ({ profileName, onLinkClick }) => {
         </div>
       </motion.header>
 
-      <MobileMenu 
-        isOpen={isMenuOpen} 
-        onClose={() => setIsMenuOpen(false)} 
+      <MobileMenu
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
         navLinks={navLinks}
         onLinkClick={handleLinkClick}
       />
