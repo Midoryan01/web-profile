@@ -23,7 +23,7 @@ export const profile = {
   title: "Fullstack Developer & System Analyst",
   bio: "I'm passionate about system analysis and web development, understanding complex processes, identifying real user needs, and translating them into efficient, intuitive digital solutions that bridge the gap between business goals and technology.",
   avatar: "/Profile.PNG",
-  cvUrl: "https://drive.google.com/file/d/1cXpNT7K4z6dMV-VLdaNyV7yIzyluOrx1/view?usp=sharing",
+  cvUrl: "https://drive.google.com/file/d/14QAnvAv0l-1WpPCCEId76rSjsoEf6cUC/view?usp=drive_link",
   email: "ryanadisanjaya@gmail.com",
   socials: {
     github: "https://github.com/Midoryan01",
